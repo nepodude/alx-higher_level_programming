@@ -8,5 +8,5 @@ if args == 0:
     print(0)
 elif args > 0:
     for i in range(args):
-        sum += argv[i]
+        sum += int(argv[i])
     print(sum)
