@@ -1,18 +1,14 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    howmany = 0
-    for i in my_list:
-        howmany += 1
+     count = 0
     try:
-        i = 0
         for element in my_list:
-            if i != x - 1 and x != 0:
+            if count < x:
                 print(element, end='')
-            if i == x - 1 or i == howmany - 1:
-                print(element)
-            i += 1
-            if i == x:
+                count += 1
+            else:
                 break
-        return i
+        print()
     except Exception as e:
         print(f"An error occured: {e}")
+    return count
