@@ -1,0 +1,41 @@
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+>>> text_indentation("My School is good.")
+My School is good.
+<BLANKLINE>
+
+>>> text_indentation("is My school good?")
+is My school good?
+<BLANKLINE>
+
+>>> text_indentation("My School:")
+My School:
+<BLANKLINE>
+
+>>> text_indentation("My School: is good. Right?")
+My School:
+<BLANKLINE>
+is good.
+<BLANKLINE>
+Right?
+<BLANKLINE>
+
+>>> text_indentation("89 is my school")
+89 is my school
+
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+
+>>> text_indentation(34)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string

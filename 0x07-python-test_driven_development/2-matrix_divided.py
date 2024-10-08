@@ -16,41 +16,6 @@ def matrix_divided(matrix, div):
     Returns:
         the original matrix but each item is divided by 0, and each item is rounded to 2 decial digits.
 
-    Examples:
-        >>> matrix = [[1, 2, 3], [4, 5, 6]]
-        >>> matrix_divided(matrix, 2)
-        [[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
-
-        >>> matrix = [[-4, 4], [2.5, 7]]
-        >>> matrix_divided(matrix, 2)
-        [[-2.0, 2.0], [1.25, 3.5]]
-
-        >>> matrix = [[1, 2], [3, 4, 5]]
-        >>> matrix_divided(matrix, 2)
-        Traceback (most recent call last):
-            ...
-        TypeError: Each row of the matrix must have the same size
-
-        >>> matrix = [[1, "a"], [3, 4]]
-        >>> matrix_divided(matrix, 2)
-        Traceback (most recent call last):
-            ...
-        TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-        >>> matrix_divided(None, 2)
-        Traceback (most recent call last):
-            ...
-        TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-        >>> matrix_divided([[1, 2], [3, 4]], "a")
-        Traceback (most recent call last):
-            ...
-        TypeError: div must be a number
-
-        >>> matrix_divided([[1, 2], [3, 4]], 0)
-        Traceback (most recent call last):
-            ...
-        ZeroDivisionError: division by zero
     """
     num_items = 0
     num_rows = 0
