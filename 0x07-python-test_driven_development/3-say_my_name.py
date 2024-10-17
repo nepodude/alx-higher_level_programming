@@ -2,6 +2,7 @@
 
 """A function that says my name."""
 
+
 def say_my_name(first_name, last_name=""):
 
     """
@@ -11,7 +12,7 @@ def say_my_name(first_name, last_name=""):
     Args:
         first_name (str): The first name.
         last_name (str, optional): The last name. Defaults to an empty string.
-    
+
     Raises:
         TypeError: If first_name is not a string.
         TypeError: If last_name is not a string.
