@@ -1,4 +1,5 @@
 >>> add_integer = __import__('0-add_integer').add_integer
+>>> import math
 >>> add_integer(1, 2)
 3
 >>> add_integer(100, -2)
@@ -29,3 +30,11 @@ TypeError: a must be an integer
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
+>>> add_integer(math.nan, 2)
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
+>>> add_integer(3, math.nan)
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
