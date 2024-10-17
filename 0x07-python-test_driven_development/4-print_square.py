@@ -2,13 +2,16 @@
 
 """ A function which prints a square matrix using '#' """
 
+
 def print_square(size):
 
     """
-    Prints a rectangular grid of '#' characters whose height and width are both equal to size.
+    Prints a rectangular grid of '#' characters whose
+    height and width are both equal to size.
 
     Args:
-        size: a numeric quantity which is suposed to be an integer otherwise an error will be raised.
+        size: a numeric quantity which is suposed to be
+        an integer otherwise an error will be raised.
 
     Raise:
         TypeError: size must be an integer
