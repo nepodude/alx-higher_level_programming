@@ -57,7 +57,9 @@ class Rectangle:
         if self.height == 0 or self.width == 0:
             return ''
 
-        rows = ['#' * self.width for _ in range(self.height)]
+        rows = [str(
+            self.print_symbol) * self.width for _ in range(self.height)
+            ]
 
         return '\n'.join(rows)
 
