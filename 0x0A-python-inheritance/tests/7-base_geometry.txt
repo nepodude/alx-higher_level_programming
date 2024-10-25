@@ -1,0 +1,17 @@
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+>>> name = "Nepo"
+>>> value = 37
+>>> value1 = 0
+>>> value2 = -1
+>>> value3 = "Jean"
+>>> value4 = None
+>>> BaseGeometry.integer_validator(name, value)
+>>> BaseGeometry.integer_validator(name, value1)
+Traceback (most recent call last):
+ValueError
+>>> BaseGeometry.integer_validator(name, value2)
+
+>>> BaseGeometry.integer_validator(name, value3)
+
+>>> BaseGeometry.integer_validator(name, value4)
+
