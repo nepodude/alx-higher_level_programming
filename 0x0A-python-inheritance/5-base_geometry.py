@@ -3,6 +3,6 @@
 """initiates empty class"""
 
 
-class BaseGeometry(self):
+class BaseGeometry:
     """Just pass"""
     pass
