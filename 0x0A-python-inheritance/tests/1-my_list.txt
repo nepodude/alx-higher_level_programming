@@ -1,0 +1,34 @@
+>>> MyList = __import__('1-my_list').MyList
+>>> List = [2, 3, 1, 4, 5]
+>>> MyList.print_sorted(List)
+[1, 2, 3, 4, 5]
+>>> List = [2]
+>>> MyList.print_sorted(List)
+[2]
+>>> List = [2, 2, 2]
+>>> MyList.print_sorted(List)
+[2, 2, 2]
+>>> List = [1, 2, 3]
+>>> MyList.print_sorted(List)
+[1, 2, 3]
+>>> List = []
+>>> MyList.print_sorted(List)
+[]
+>>> List = [-1, -2, -4, -3]
+>>> MyList.print_sorted(List)
+[-4, -3, -2, -1]
+>>> List = [-1, 1, 0]
+>>> MyList.print_sorted(List)
+[-1, 0, 1]
+>>> List = None
+>>> MyList.print_sorted(List)
+Traceback (most recent call last):
+...
+TypeError: 'NoneType' object is not iterable
+>>> List = ["Jean", 0, 1]
+>>> MyList.print_sorted(List)
+[0, 1]
+>>> List = "Nepo"
+>>> MyList.print_sorted(List)
+[]
+
