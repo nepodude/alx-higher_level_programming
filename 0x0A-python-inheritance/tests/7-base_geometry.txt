@@ -16,6 +16,6 @@ ValueError: Numbers must be greater than 0
 >>> bg.integer_validator(name, value3)
 Traceback (most recent call last):
 TypeError: Numbers must be an integer
->>> BaseGeometry.integer_validator(name, value4)
+>>> bg.integer_validator(name, value4)
 Traceback (most recent call last):
 TypeError: Numbers must be an integer
