@@ -6,4 +6,4 @@ methods"""
 
 def lookup(obj):
     """Returning them using dir() method"""
-    return(dir(obj))
+    return (dir(obj))
