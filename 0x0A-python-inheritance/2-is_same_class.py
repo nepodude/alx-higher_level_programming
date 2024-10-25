@@ -6,4 +6,4 @@
 
 def is_same_class(obj, a_class):
     """Start checking for instance of obj"""
-    return type(obj) == a_class
+    return type(obj) is a_class
