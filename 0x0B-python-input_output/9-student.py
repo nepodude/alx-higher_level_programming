@@ -2,7 +2,6 @@
 """Define a student"""
 
 
-helper = __import__('8-class_to_json').class_to_json
 class Student:
     """initialize the class"""
     def __init__(self, first_name, last_name, age):
@@ -13,4 +12,4 @@ class Student:
     """retrives a dictioanary representation of a Student
     instance."""
     def to_json(self):
-        return helper(self)
+        return self.__dict__
