@@ -1,32 +1,28 @@
 #!/usr/bin/python3
-"""pascal triangle is great"""
-
-
-def fact(n):
-    """pascal triangle is great"""
-    if n == 0:
-        return 1
-    keeper = 1
-    for i in range(1, n):
-        keeper *= i
-    keeper *= n
-    return keeper
-
-
-def combinatorial(i, j):
-    """pascal triangle is great"""
-    return int(fact(j) / (fact(j - i) * fact(i)))
+"""Generate Pascal's triangle up to n rows without using factorials."""
 
 
 def pascal_triangle(n):
-    """pascal triangle is great"""
+    """Generate Pascal's triangle up to n rows."""
     if n <= 0:
         return []
-    i = 0
-    mylist = []
-    for i in range(n):
-        helper = []
-        for j in range(i + 1):
-            helper.append(combinatorial(j, i))
-        mylist.append(helper)
-    return mylist
+    
+    triangle = [[1]]  # First row is always [1]
+    
+    for i in range(1, n):
+        # Start the row with 1
+        row = [1]
+        
+        # Calculate the intermediate values based on the previous row
+        for j in range(1, i):
+            row.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
+        
+        # End the row with 1
+        row.append(1)
+        triangle.append(row)
+    
+    return triangle
+
+
+# Test the function with n = 100
+print(pascal_triangle(100))
