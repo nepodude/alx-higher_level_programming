@@ -15,4 +15,5 @@ class Student:
         """return stuffs"""
         if (type(attrs) is list and type(element) is str for element in attrs):
             return ({k: getattr(self, k) for k in attrs if hasattr(self, k)})
-        else self.__dict__
+        else:
+             self.__dict__
