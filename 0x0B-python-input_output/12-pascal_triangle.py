@@ -22,7 +22,3 @@ def pascal_triangle(n):
         triangle.append(row)
     
     return triangle
-
-
-# Test the function with n = 100
-print(pascal_triangle(100))
