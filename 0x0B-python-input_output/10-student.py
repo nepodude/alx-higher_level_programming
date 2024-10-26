@@ -10,8 +10,6 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    """retrives a dictioanary representation of a Student
-    instance."""
     def to_json(self, attrs=None):
         """return stuffs"""
         if type(attrs) is list and type(element) is str for element in attrs:
