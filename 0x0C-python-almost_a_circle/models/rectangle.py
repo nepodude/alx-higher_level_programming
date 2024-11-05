@@ -18,8 +18,7 @@ class Rectangle(Base):
         height (int): The height of the rectangle.
         x (int): The x-coordinate of the rectangle (default is 0).
         y (int): The y-coordinate of the rectangle (default is 0).
-        id (int): Optional. If provided,
-        this value is used as the rectangle's id.
+        id (int): Optional. If provided, this value is used as the rectangle's id.
         """
         super().__init__(id)
         self.width = width
@@ -34,9 +33,11 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """sets value of width"""
-        if not isinstance(value, int) or value <= 0:
-            raise ValueError("width must be an integer > 0")
+        """sets value of width with validation"""
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
@@ -46,9 +47,11 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """sets value of height"""
-        if not isinstance(value, int) or value <= 0:
-            raise ValueError("height must be an integer > 0")
+        """sets value of height with validation"""
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
@@ -58,9 +61,11 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """sets value of x"""
-        if not isinstance(value, int) or value < 0:
-            raise ValueError("x must be an integer >= 0")
+        """sets value of x with validation"""
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
@@ -70,7 +75,9 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """sets value of y"""
-        if not isinstance(value, int) or value < 0:
-            raise ValueError("y must be an integer >= 0")
+        """sets value of y with validation"""
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
         self.__y = value
