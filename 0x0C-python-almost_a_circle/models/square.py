@@ -77,7 +77,13 @@ class Square(Rectangle):
             "y": self.y
         }
 
-    return (
-        f"[Square] ({self.id}) {self.x}/{self.y} - "
-        f"{self.width}"
-    )
+    def __str__(self):
+        """
+        Return the string representation of the Rectangle.
+
+        Format: [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return (
+            f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
+            f"{self.width}"
+        )
