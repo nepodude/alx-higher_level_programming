@@ -13,9 +13,10 @@ class Base:
     def __init__(self, id=None):
         """
         Initializes a new instance of the Base class.
-        
+
         Parameters:
-        id (int): Optional. If provided, this value is used as the instance's id.
+        id (int): Optional. If provided,
+        this value is used as the instance's id.
                   If not provided, an automatic id is assigned.
         """
         if id is not None:
