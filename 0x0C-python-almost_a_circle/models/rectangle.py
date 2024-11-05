@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Define a rectangle"""
-from base import Base
+from modules.base import Base
 
 
 class Rectangle(Base):
