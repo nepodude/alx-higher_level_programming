@@ -18,7 +18,8 @@ class Rectangle(Base):
         height (int): The height of the rectangle.
         x (int): The x-coordinate of the rectangle (default is 0).
         y (int): The y-coordinate of the rectangle (default is 0).
-        id (int): Optional. If provided, this value is used as the rectangle's id.
+        id (int): Optional. If provided,
+        this value is used as the rectangle's id.
         """
         super().__init__(id)
         self.width = width
@@ -81,3 +82,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """Return the area of the Rectangle."""
+        return self.width * self.height
