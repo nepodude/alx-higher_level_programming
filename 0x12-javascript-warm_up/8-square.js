@@ -4,8 +4,8 @@ if (isNaN(process.argv[2]) || process.argv[2] === undefined) {
 }
 
 let helper = parseInt(process.argv[2]);
-let helper1 = helper;
+const helper1 = helper;
 while (helper > 0) {
-  console.log("X".repeat(helper1));
+  console.log('X'.repeat(helper1));
   helper--;
 }
