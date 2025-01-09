@@ -5,6 +5,6 @@ if (isNaN(process.argv[2]) || process.argv[2] === undefined) {
 
 let helper = parseInt(process.argv[2]);
 while (helper > 0) {
-    console.log('C is fun');
-    helper --;
+  console.log('C is fun');
+  helper --;
 }
