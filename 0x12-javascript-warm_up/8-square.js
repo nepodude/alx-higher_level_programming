@@ -7,5 +7,5 @@ let helper = parseInt(process.argv[2]);
 let helper1 = helper;
 while (helper > 0) {
   console.log("X".repeat(helper1));
-  helper --;
+  helper--;
 }
