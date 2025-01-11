@@ -6,7 +6,8 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     if (this.width && this.height) {
       for (let i = 0; i < this.height; i++) {
         console.log('X'.repeat(this.width));
@@ -14,6 +15,5 @@ class Rectangle {
     }
   }
 }
-  
+
 module.exports = Rectangle;
-  
