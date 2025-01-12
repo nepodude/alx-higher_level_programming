@@ -1,10 +1,14 @@
 #!/usr/bin/node
 const dict = require('./101-data').dict;
 const newDict = {};
-for (const [userId, occurrence] of Object.entries(dict)) {
-  if (!newDict[occurrence]) {
-    newDict[occurrence] = [];
+
+const values = [...new Set(Object.values(dict))];
+values.forEach((value) => {
+  newDict[value] = [];
+});
+for (const [key, value] of Object.entries(dict)) {
+  if (newDict[value]) {
+    newDict[value].push(key);
   }
-  newDict[occurrence].push(userId);
 }
-console.log(dict);
+console.log(newDict);
