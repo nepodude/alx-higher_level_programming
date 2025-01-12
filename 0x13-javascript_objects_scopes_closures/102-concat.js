@@ -14,4 +14,3 @@ const content1 = fs.readFileSync(file1, 'utf8');
 const content2 = fs.readFileSync(file2, 'utf8');
 
 fs.writeFileSync(destination, content1 + content2);
-
