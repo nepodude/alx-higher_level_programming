@@ -7,4 +7,4 @@ for (const [userId, occurrence] of Object.entries(dict)) {
   }
   newDict[occurrence].push(userId);
 }
-console.long(dict);
+console.log(dict);
