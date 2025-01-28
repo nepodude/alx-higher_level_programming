@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""  lists all states where name matches the argument. from the database hbtn_0e_0_usa """
+"""  lists all states where name matches the argument.\
+from the database hbtn_0e_0_usa """
 import MySQLdb
 import sys
 
