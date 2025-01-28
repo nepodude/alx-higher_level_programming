@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     cursor.execute("SELECT * FROM cities ORDER BY id ASC;")
 
-    states = cursor.fetchall()
+    cities = cursor.fetchall()
 
     for city in cities:
         print(city)
